@@ -7,7 +7,6 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cms', '0014_auto_20160404_1908'),
         ('aaittech_cms_template', '0001_initial'),
     ]
 
