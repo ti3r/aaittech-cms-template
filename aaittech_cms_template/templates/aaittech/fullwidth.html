@@ -1,0 +1,115 @@
+{% extends "aaittech/base.html" %}
+{% load cms_tags staticfiles %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+	<!-- ==== HEADERWRAP ==== -->
+	<div id="home" name="home">
+		<div id="headerwrap" name="home">
+			<header class="clearfix">
+				{% placeholder "home_header_text" %}
+				<p>{% placeholder "home_header_caption" %}</p>
+			</header>
+			<a class="smothScroll btn btn-large" href="#portfolio">{% placeholder portfolio_btn_caption %}</a>
+			<div >
+			{% placeholder "home_bottom_text" %}
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- ==== ends HEADERWRAP ==== -->
+
+
+	<!-- ==== ABOUT ==== -->
+	<div id="about" name="about">
+		<div class="container">
+			<div class="row white">
+				<div class="col-md-6"><img class="img-responsive" src="{% static 'aaittech/img/about/about2.png' %}" align=""></div>
+				<div class="col-md-6">
+					<h3>{% placeholder "about_us_header" %}</h3>
+
+					<p>{% placeholder "about_us_caption" %}</p>
+
+					<h3>{% placeholder "why_choose_us" %}</h3>
+
+					<p>{% placeholder "why_choose_us_caption" %}</p>
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+	</div>
+
+	<!-- Ends ABOUT ==== -->
+
+	<div id="services" name="services">
+    <h2>{% placeholder "services_header" %}</h2>
+    <hr/>
+    <p>{% placeholder "services_description" %}</p>
+
+    <div id="container">
+        {% placeholder "services" %}
+    </div>
+</div>
+
+<div id="portfolio" name="portfolio">
+    <div class="container">
+        <div class="row">
+            <h2 class="centered">{% placeholder "placeholder_portfolio_header" %}</h2>
+            <hr>
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <p class="large">
+                    {% placeholder "placeholder_portfolio_caption" %}
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            {% placeholder "placeholder_portfolio" %}
+        </div>
+    </div>
+</div>
+
+<div id="team" name="team">
+    <div class="container">
+        <div class="row centered">
+            <h2>{% placeholder "team_header" %}</h2>
+            <hr/>
+            {% placeholder "placeholder_team" %}
+        </div>
+    </div>
+</div>
+
+
+<!-- ==== CONTACT ==== -->
+<div id="contact" name="contact">
+    <div class="container">
+        <div class="row">
+            <h2 class="centered">{% placeholder "contact_header" %}</h2>
+            <hr>
+            <div class="col-md-4 centered"><i class="fa fa-map-marker fa-2x"></i>
+
+                <p>{% placeholder "contact_address" %}</p>
+            </div>
+            <div>
+
+            </div>
+            <div class="col-md-4"><i class="fa fa-envelope-o fa-2x"></i>
+                <p>{% placeholder "contact_email" %}</p>
+            </div>
+            <div class="col-md-4"><i class="fa fa-phone fa-2x"></i>
+
+                <p>{% placeholder "contact_phone" %}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                {% placeholder "contact_caption" %}
+                {% placeholder "contact_form" %}
+                <!-- form -->
+            </div>
+        </div>
+        <!-- row -->
+    </div>
+</div>
+{% endblock content %}

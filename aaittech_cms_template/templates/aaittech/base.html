@@ -1,0 +1,108 @@
+{% load cms_tags menu_tags sekizai_tags staticfiles analytical %}
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}This is my new project home page{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="{% static 'aldryn_bootstrap3/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'aldryn_bootstrap3/css/bootstrap-iconpicker.min.css' %}">
+        <link rel="stylesheet" href="{% static 'aldryn_bootstrap3/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'aldryn_bootstrap3/css/base.css' %}">
+
+        <link rel="stylesheet" href="{% static 'aaittech/css/main.css' %}">
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+        {% analytical_head_top %}
+
+        {% render_block "css" %}
+
+        {% analytical_head_bottom %}
+    </head>
+    <body>
+        {% cms_toolbar %}
+        {% analytical_body_top %}
+
+        <div id="navbar-main">
+          <!-- Fixed navbar -->
+          <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">
+                    <span><img id="logo" class="logo" src="{% static 'aaittech/img/aamplogo.svg' %}" /></span>
+                    <span>A&A IT Solutions</span>
+                </a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li> <a href="#home" class="smoothScroll">Home</a></li>
+                  <li> <a href="#about" class="smoothScroll"> About</a></li>
+                  <li> <a href="#services" class="smoothScroll"> Services</a></li>
+                  <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+                  <li> <a href="#team" class="smoothScroll"> Team</a></li>
+                  <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+                </ul>
+              </div>
+              <!--/.nav-collapse -->
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+            {% block content %}{% endblock content %}
+        </div>
+
+
+        <div id="footerwrap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8"> <span class="copyright">Copyright &copy;
+                  <script>
+                        var today = new Date();
+                        var yyyy = today.getFullYear();
+                        document.write(yyyy);
+                  </script>
+                  A&amp;A It Solutions. Based on <a href="http://www.templategarden.com/template/ascend-free-one-page-bootstrap-template/" rel="nofollow">Ascend</a></span> </div>
+              <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                  <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+                </ul>
+                <span><a href="/en">English</a></span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span><a href="/es">Spanish</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="{% static 'aldryn_bootstrap3/js/jquery.min.js' %}"></script>
+        <script src="{% static 'aldryn_bootstrap3/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'aldryn_bootstrap3/js/iconset/iconset-glyphicon.min.js' %}"></script>
+        <script src="{% static 'aldryn_bootstrap3/js/iconset/iconset-fontawesome-4.2.0.min.js' %}"></script>
+        <script src="{% static 'aldryn_bootstrap3/js/bootstrap-iconpicker.min.js' %}"></script>
+        <script src="{% static 'aldryn_bootstrap3/js/base.js' %}"></script>
+
+        <script src="{% static 'aaittech/js/interact.js' %}"></script>
+        <script src="{% static 'aaittech/js/modernizr.custom.js' %}"></script>
+        <!--<script src="{% static 'aaittech/js/retina.js' %}"></script>-->
+        <script src="{% static 'aaittech/js/smoothscroll.js' %}"></script>
+
+        {% render_block "js" %}
+        {% analytical_body_bottom %}
+
+        <script>
+            var home = document.getElementById('headerwrap');
+            if (home){
+                home.style["min-height"]=window.innerHeight+'px';
+            }
+        </script>
+    </body>
+</html>
