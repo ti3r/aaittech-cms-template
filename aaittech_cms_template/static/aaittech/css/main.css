@@ -613,6 +613,9 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	right: 30px;
 }
 
+.alex-collapse {
+    display:none;
+}
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */

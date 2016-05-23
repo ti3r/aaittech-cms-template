@@ -1,8 +1,11 @@
 <div class="grid mask">
     <figure>
         <span class="plugin_picture align-center">
-            <img src="{{instance.image.url}}" alt="">
-
+            {% if instance.image_new %}
+                <img src="{{instance.image_new.url}}" alt="">
+            {% elif instance.image %}
+                <img src="{{instance.image.url}}" alt="">
+            {% endif %}
         </span>
     <figcaption>
         <h5>{{instance.caption}}</h5>

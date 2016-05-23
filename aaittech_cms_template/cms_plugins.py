@@ -10,7 +10,7 @@ class AAPortfolioItemShowPlugin(CMSPluginBase):
     model = AAPortfolioItemShow
     name = _("AAITTECH Portfolio Item")
     render_template = "aaittech/portfolio_plugin.html"
-    cache = False
+    cache = True
 
     def render(self, context, instance, placeholder):
         context = super(AAPortfolioItemShowPlugin,self).render(context,instance, placeholder)
@@ -20,7 +20,7 @@ class AAPersonalDisplayPlugin(CMSPluginBase):
     model = AAPersonalDisplay
     name = _("AAITTECH Personal Display")
     render_template = "aaittech/person_plugin.html"
-    cache = False
+    cache = True
 
     def render(self, context, instance, placeholder):
         context = super(AAPersonalDisplayPlugin,self).render(context,instance, placeholder)

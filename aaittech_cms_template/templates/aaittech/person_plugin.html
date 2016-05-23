@@ -1,6 +1,11 @@
 <div class="centered">
-    <img alt="{{instance.image_alt}}" class="img img-circle"
+    {% if instance.image_new %}
+        <img alt="{{instance.image_alt}}" class="img img-circle"
+         src="{{instance.image_new.url}}" width="{{instance.image_width}}px" height="{{instance.image_height}}px">
+    {% else %}
+        <img alt="{{instance.image_alt}}" class="img img-circle"
          src="{{instance.image.url}}" width="{{instance.image_width}}px" height="{{instance.image_height}}px">
+    {% endif %}
     <h4>{{instance.p_name}}</h4>
     <p>{{instance.p_title}}<br>
     {{instance.p_about}}</p>
