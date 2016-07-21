@@ -231,13 +231,13 @@ a:before, a:after {
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 200px;
+    height: 45px;
     color: #123456;
 }
 
 #headerwrap {
-	background: url(../img/bg.jpg) no-repeat center top;
+	background: url(../img/aa-bg.jpg) no-repeat center top;
 	padding-top: 200px;
 	text-align: center;
 	background-attachment: relative;
