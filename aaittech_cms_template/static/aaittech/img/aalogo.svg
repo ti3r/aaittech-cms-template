@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="Capa_1" style="enable-background:new 0 0 184.751 184.751;" x="0px" y="0px" viewBox="0 0 500 184.751" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Doppio+One:400|Roboto:100,300,500,700,900,100italic,300italic,400,400italic,500italic,700italic,900italic);</style>
+  </defs>
+  <path d="M 0 80 L 46.188 0 L 138.566 0 L 184.751 80 L 138.566 160 L 46.188 160 L 0 80 Z" style="fill: rgb(25, 52, 65);" transform="matrix(0, 1.0000000000000002, -1.0000000000000002, 0, 173.00000000000003, 4.440892098500626e-16)" bx:origin="0.5 0.5"/>
+  <path d="M 23.625 92.495 L 58.313 32.495 L 127.69 32.495 L 162.375 92.495 L 127.69 152.495 L 58.313 152.495 L 23.625 92.495 Z" style="fill: rgb(252, 255, 245);" transform="matrix(0, 1, -1, 0, 185.494994, -0.505005)" bx:origin="0.5 0.5"/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <g/>
+  <path d="M 92.999 0.019 L 93.007 184.758 L 172.994 138.579 L 172.992 46.185 L 92.999 0.019 Z" style="stroke: rgb(51, 69, 79); fill: rgb(25, 52, 65); fill-opacity: 0.2; vector-effect: non-scaling-stroke; stroke-width: 0;"/>
+  <path d="M 256.415 227.992 C 256.415 227.992 256.415 227.992 256.415 227.992 Z" style="stroke: black; fill: rgb(186, 218, 85); fill-opacity: 0.5; vector-effect: non-scaling-stroke;"/>
+  <text style="font-size: 60px; font-family: &quot;Doppio One&quot;; word-spacing: 0px; text-transform: uppercase; font-variant: normal; fill: rgb(25, 52, 65);" x="43.997" y="115.026">A</text>
+  <text x="84.45" y="114.245" style="font-size: 30px; font-family: &quot;Doppio One&quot;; word-spacing: 0px; fill: rgb(25, 52, 65);">&amp;</text>
+  <text style="font-size: 60px; font-family: &quot;Doppio One&quot;; word-spacing: 0px; text-transform: uppercase; font-variant: normal; fill: rgb(25, 52, 65);" x="109.561" y="115.081">A</text>
+  <text x="180.154" y="115.25" style="font-size: 60px; font-family: Roboto; word-spacing: 0px; font-variant: normal; text-decoration: underline; fill: rgb(25, 52, 65);">IT Solutions</text>
+</svg>
