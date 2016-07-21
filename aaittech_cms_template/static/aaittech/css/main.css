@@ -232,7 +232,8 @@ a:before, a:after {
 
 .logo {
     width: 200px;
-    height: 45px;
+    height: 60px;
+	margin-top: -20px;
     color: #123456;
 }
 
